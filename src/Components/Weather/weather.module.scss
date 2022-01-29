@@ -1,0 +1,93 @@
+$font: "Montserrat", sans-serif;
+
+
+.weatherCon {
+    display: flex;
+    width: 350px;
+    height: min-content;
+    background-color: black;
+    margin: 1.5rem auto;
+    border-radius: 15px;
+    background-color: #21d4fd;
+    background-image: linear-gradient(19deg, #21d4fd 0%, #7621ff 100%);
+    padding: 1rem 1rem;
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    border-radius: 8px;
+
+    img {
+        height: 4rem;
+    }
+
+    .top {
+        display: flex;
+        width: 100%;
+    }
+
+    .temp {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-family: $font;
+        color: white;
+        margin: 0;
+        margin-top: 1.25rem;
+        margin-right: 1.5rem;
+        font-weight: 400;
+
+    }
+
+    .location {
+        margin-left: 1rem;
+        h1,
+        h2 {
+            font-family: $font;
+            color: white;
+            margin: 0;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            margin-top: 0.25rem;
+        }
+
+        h2 {
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .bottom {
+        margin-top: 2rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 0.5rem;
+        box-sizing: border-box;
+    }
+
+    .cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-family: $font;
+            color: white;
+            margin: 0;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        p {
+            font-family: $font;
+            color: white;
+            margin: 0;
+            font-size: 0.8rem;
+            margin-top: 0.2rem;
+        }
+    }
+}
